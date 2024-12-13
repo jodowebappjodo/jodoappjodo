@@ -1,0 +1,48 @@
+/* src/components/Modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker overlay for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure modal is above other content */
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  text-align: center;
+  max-width: 600px; /* Set a max width for the modal */
+  width: 100%; /* Full width on small screens */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 1.5rem; /* Font size for the heading */
+  color: #333; /* Darker text color for better readability */
+}
+
+.modal-content button {
+  background-color: #ff6b6b; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners for button */
+  padding: 10px 20px; /* Padding inside the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Font size for button text */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.modal-content button:hover {
+  background-color: #ff4c4c; /* Darker shade on hover */
+}
