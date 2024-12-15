@@ -1046,7 +1046,7 @@ export default function App() {
       </h1>
       {/* Match Timer Display */}
       <div className="text-center mb-4">
-        <h1 style={{ fontSize: "85px" }}>
+        <h1 style={{ fontSize: "105px" }}>
           {Math.floor(matchTimer / 60)}:{" "}
           {(matchTimer % 60).toString().padStart(2, "0")}
         </h1>
@@ -1064,10 +1064,10 @@ export default function App() {
             {" "}
             تمام{" "}
           </button>
-          {/* <button className="btn btn-primary me-1 " onClick={startMatchTimer}>
+          <button className="btn btn-primary me-1 " onClick={startMatchTimer}>
             {" "}
             ریست{" "}
-          </button> */}
+          </button>
           <input
             type="number"
             value={manualTimer}
@@ -1100,7 +1100,7 @@ export default function App() {
         {players.map((player, index) => (
           <li
             key={index}
-            style={{ padding: "5px" }}
+            style={{ padding: "15px" }}
             className={`list-group-item d-flex justify-content-between align-items-center ${
               index % 2 === 0
                 ? "bg-white"
@@ -1267,7 +1267,7 @@ export default function App() {
                 style={{
                   marginLeft: "10px",
                   marginRight: "10px",
-                  fontSize: "35px",
+                  fontSize: "65px",
                 }}
               >
                 {khakTimers[index]} "
@@ -1309,7 +1309,7 @@ export default function App() {
                 style={{
                   marginLeft: "10px",
                   marginRight: "10px",
-                  fontSize: "35px",
+                  fontSize: "65px",
                 }}
               >
                 {timeoutTimers[index]}"
@@ -1394,7 +1394,7 @@ export default function App() {
                 style={{
                   marginLeft: "10px",
                   marginRight: "10px",
-                  fontSize: "35px",
+                  fontSize: "65px",
                 }}
               >
                 {playerTimers[player.name] !== undefined
