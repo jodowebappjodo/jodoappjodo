@@ -1100,8 +1100,8 @@ export default function App() {
         {players.map((player, index) => (
           <li
             key={index}
-            style={{ padding: "15px" }}
-            className={`list-group-item d-flex justify-content-between align-items-center ${
+            style={{ padding: "15px", borderTop: "5px solid yellow" }}
+            className={`list-group-item d-flex justify-content-between align-items-center  ${
               index % 2 === 0
                 ? "bg-white"
                 : player2Color === "bg-dark"
